@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARDMERE, a lakeside residence</title>
+<meta name="description" content="Ardmere is a lakeside residence concept. A layered dusk hero, a lantern that takes you inside, and rooms that arrive one by one as you scroll.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ LAKE VIEW / HERO ============ -->
+<div id="lakeView">
+  <section class="hero" id="hero" aria-label="Ardmere at dusk, seen from the lake">
+    <div class="hero-zoom" id="heroZoom">
+
+      <div class="layer layer-bg" id="layerBg">
+        <img src="img/hero-bg.jpg" alt="" draggable="false">
+      </div>
+
+      <div class="glints" aria-hidden="true">
+        <span class="glint" style="left:14%; top:65%; height:84px; width:34px;"></span>
+        <span class="glint" style="left:31%; top:65.5%; height:64px; width:26px;"></span>
+        <span class="glint glint-lantern" style="left:47.5%; top:65%; height:110px; width:44px;"></span>
+        <span class="glint" style="left:66%; top:65.5%; height:72px; width:30px;"></span>
+        <span class="glint" style="left:84%; top:65%; height:58px; width:24px;"></span>
+      </div>
+
+      <div class="word-reflect" aria-hidden="true">ARDMERE</div>
+
+      <div class="word-layer" id="wordLayer">
+        <h1 class="word">ARDMERE</h1>
+      </div>
+
+      <div class="layer layer-houses" id="layerHouses">
+        <svg viewBox="0 0 1600 430" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+          <defs>
+            <radialGradient id="lanternGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#ffd9a0" stop-opacity="0.95"></stop>
+              <stop offset="35%" stop-color="#ffb84d" stop-opacity="0.55"></stop>
+              <stop offset="100%" stop-color="#ffb84d" stop-opacity="0"></stop>
+            </radialGradient>
+            <linearGradient id="glassWarm" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#ffd9a0"></stop>
+              <stop offset="100%" stop-color="#ff9e3d"></stop>
+            </linearGradient>
+          </defs>
+
+          <!-- shore band -->
+          <rect x="0" y="402" width="1600" height="28" fill="#04070e"></rect>
+
+          <!-- HOUSE 1, tall flat roof -->
+          <g>
+            <rect x="230" y="160" width="22" height="27" fill="#05080f"></rect>
+            <rect x="30" y="203" width="260" height="227" fill="#0a1220"></rect>
+            <rect x="16" y="185" width="288" height="18" fill="#05080f"></rect>
+            <g class="wins">
+              <rect x="58" y="228" width="34" height="42" fill="#ffc46b"></rect>
+              <rect x="118" y="228" width="34" height="42" fill="#ffc46b"></rect>
+              <rect x="232" y="228" width="34" height="42" fill="#ff9e3d"></rect>
+              <rect x="58" y="292" width="34" height="42" fill="#ff9e3d"></rect>
+              <rect x="178" y="292" width="34" height="42" fill="#ffc46b"></rect>
+              <rect x="118" y="352" width="34" height="42" fill="#ffc46b"></rect>
+            </g>
+            <rect x="178" y="228" width="34" height="42" fill="#16233c"></rect>
+            <rect x="232" y="292" width="34" height="42" fill="#16233c"></rect>
+            <rect x="58" y="352" width="34" height="42" fill="#16233c"></rect>
+            <rect x="205" y="356" width="42" height="74" fill="#04070e"></rect>
+          </g>
+
+          <!-- pine -->
+          <g fill="#060b16">
+            <rect x="302" y="368" width="7" height="62"></rect>
+            <polygon points="305,272 284,342 326,342"></polygon>
+            <polygon points="305,312 278,388 332,388"></polygon>
+            <polygon points="305,356 272,430 338,430"></polygon>
+          </g>
+
+          <!-- HOUSE 2, pitched roof -->
+          <g>
+            <polygon points="316,246 432,172 548,246" fill="#05080f"></polygon>
+            <rect x="334" y="246" width="196" height="184" fill="#0d1626"></rect>
+            <g class="wins">
+              <rect x="362" y="272" width="36" height="44" fill="#ffc46b"></rect>
+              <rect x="456" y="272" width="36" height="44" fill="#ffc46b"></rect>
+              <rect x="362" y="332" width="36" height="44" fill="#ff9e3d"></rect>
+            </g>
+            <rect x="456" y="332" width="36" height="44" fill="#16233c"></rect>
+            <rect x="416" y="356" width="34" height="74" fill="#04070e"></rect>
+          </g>
+
+          <!-- HOUSE 3, glass house, lantern by the door -->
+          <g>
+            <rect x="585" y="252" width="300" height="178" fill="#0a1322"></rect>
+            <rect x="568" y="233" width="334" height="17" fill="#05080f"></rect>
+            <rect x="602" y="278" width="88" height="118" fill="url(#glassWarm)" opacity="0.92"></rect>
+            <rect x="700" y="278" width="88" height="118" fill="url(#glassWarm)" opacity="0.78"></rect>
+            <rect x="602" y="278" width="88" height="118" fill="none" stroke="#0a1322" stroke-width="5"></rect>
+            <rect x="700" y="278" width="88" height="118" fill="none" stroke="#0a1322" stroke-width="5"></rect>
+            <line x1="646" y1="278" x2="646" y2="396" stroke="#0a1322" stroke-width="4"></line>
+            <line x1="744" y1="278" x2="744" y2="396" stroke="#0a1322" stroke-width="4"></line>
+            <rect x="800" y="322" width="54" height="108" fill="#04070e"></rect>
+            <circle cx="812" cy="378" r="3" fill="#ffb84d"></circle>
+
+            <g id="lanternHotspot" class="lantern" role="button" aria-label="Enter the house" tabindex="0">
+              <circle cx="786" cy="350" r="40" fill="transparent"></circle>
+              <circle class="lantern-glow" cx="786" cy="350" r="34" fill="url(#lanternGlow)"></circle>
+              <circle class="lantern-pulse" cx="786" cy="350" r="11" fill="none" stroke="#ffcf87" stroke-width="1.6"></circle>
+              <line x1="786" y1="318" x2="786" y2="330" stroke="#0a0f1c" stroke-width="4"></line>
+              <polygon points="776,330 796,330 792,342 780,342" fill="#0a0f1c"></polygon>
+              <rect id="lanternCore" x="779" y="342" width="14" height="17" rx="3" fill="#ffd9a0"></rect>
+              <polygon points="776,359 796,359 792,366 780,366" fill="#0a0f1c"></polygon>
+            </g>
+          </g>
+
+          <!-- HOUSE 4, gable -->
+          <g>
+            <polygon points="912,232 1047,168 1182,232" fill="#05080f"></polygon>
+            <rect x="930" y="232" width="234" height="198" fill="#0a1220"></rect>
+            <circle cx="1047" cy="204" r="13" fill="#ffc46b" class="wins"></circle>
+            <g class="wins">
+              <rect x="960" y="262" width="40" height="44" fill="#ffc46b"></rect>
+              <rect x="1094" y="262" width="40" height="44" fill="#ff9e3d"></rect>
+              <rect x="1094" y="326" width="40" height="44" fill="#ffc46b"></rect>
+            </g>
+            <rect x="960" y="326" width="40" height="44" fill="#16233c"></rect>
+            <rect x="1026" y="356" width="42" height="74" fill="#04070e"></rect>
+          </g>
+
+          <!-- pine -->
+          <g fill="#060b16">
+            <rect x="1192" y="368" width="7" height="62"></rect>
+            <polygon points="1195,278 1174,348 1216,348"></polygon>
+            <polygon points="1195,316 1168,390 1222,390"></polygon>
+            <polygon points="1195,358 1162,430 1228,430"></polygon>
+          </g>
+
+          <!-- HOUSE 5, wide flat roof -->
+          <g>
+            <rect x="1490" y="162" width="24" height="26" fill="#05080f"></rect>
+            <rect x="1225" y="205" width="345" height="225" fill="#0d1626"></rect>
+            <rect x="1208" y="187" width="378" height="17" fill="#05080f"></rect>
+            <g class="wins">
+              <rect x="1254" y="236" width="52" height="48" fill="#ffc46b"></rect>
+              <rect x="1464" y="236" width="52" height="48" fill="#ffc46b"></rect>
+              <rect x="1359" y="308" width="52" height="48" fill="#ff9e3d"></rect>
+              <rect x="1464" y="308" width="52" height="48" fill="#ffc46b"></rect>
+            </g>
+            <rect x="1359" y="236" width="52" height="48" fill="#16233c"></rect>
+            <rect x="1254" y="308" width="52" height="48" fill="#16233c"></rect>
+            <rect x="1338" y="356" width="44" height="74" fill="#04070e"></rect>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="hero-ui" id="heroUi">
+      <button class="pill" id="buildPill" type="button">Build the site now</button>
+      <p class="hint"><span class="hint-dot"></span>Click the lantern to step inside</p>
+    </div>
+  </section>
+</div>
+
+<!-- ============ INSIDE VIEW ============ -->
+<div id="insideView" aria-hidden="true">
+
+  <div class="rooms-track" id="roomsTrack">
+    <div class="rooms-stage">
+
+      <article class="room" id="room1">
+        <div class="room-img"><img src="img/room-great.jpg" alt="The Great Room: a living room with a stone fireplace, tall windows on the deep blue night, and a cream sofa." draggable="false"></div>
+        <div class="room-shade"></div>
+        <header class="room-title">
+          <p class="room-label">Room 01</p>
+          <h2>The Great Room</h2>
+          <p class="room-line">Firelight, tall glass, and the blue hour held outside.</p>
+          <button class="detail-btn" type="button" data-room="great" aria-haspopup="dialog">Room details</button>
+        </header>
+      </article>
+
+      <article class="room" id="room2">
+        <div class="room-img"><img src="img/room-study.jpg" alt="The Study: bookshelves, a desk and lamp, and one large window over the mountain lake." draggable="false"></div>
+        <div class="room-shade"></div>
+        <header class="room-title">
+          <p class="room-label">Room 02</p>
+          <h2>The Study</h2>
+          <p class="room-line">Books, lamplight, and the mountain across the water.</p>
+          <button class="detail-btn" type="button" data-room="study" aria-haspopup="dialog">Room details</button>
+        </header>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ============ FINALE ============ -->
+  <section class="finale" id="finale">
+    <div class="finale-inner">
+      <header class="finale-head reveal">
+        <p class="eyebrow">Guiding Idea</p>
+        <h2 class="finale-title">Spatial Function</h2>
+        <p class="finale-intro">How the house sits on the land, and why each room is where it is.</p>
+      </header>
+
+      <div class="finale-grid">
+        <figure class="finale-figure reveal">
+          <svg id="wireHouse" viewBox="0 0 520 360" fill="none" stroke="#33513a" stroke-width="2" stroke-linecap="round" aria-label="Wireframe drawing of the Ardmere house">
+            <path class="wire-path" pathLength="1" d="M20 322 H500"></path>
+            <path class="wire-path" pathLength="1" d="M120 322 V168 H400 V322"></path>
+            <path class="wire-path" pathLength="1" d="M96 168 L260 74 L424 168"></path>
+            <path class="wire-path" pathLength="1" d="M356 108 V64 H388 V132"></path>
+            <path class="wire-path" pathLength="1" d="M238 322 V238 H282 V322"></path>
+            <path class="wire-path" pathLength="1" d="M150 206 H214 V262 H150 Z"></path>
+            <path class="wire-path" pathLength="1" d="M306 206 H370 V262 H306 Z"></path>
+            <path class="wire-path" pathLength="1" d="M182 206 V262 M338 206 V262 M150 234 H214 M306 234 H370"></path>
+            <path class="wire-path" pathLength="1" d="M452 322 V262 M434 262 H470 M440 236 H464 M446 210 H458"></path>
+            <path class="wire-path" pathLength="1" d="M60 96 m-20 0 a20 20 0 1 0 40 0 a20 20 0 1 0 -40 0"></path>
+            <path class="wire-path" pathLength="1" d="M120 344 H400 M120 336 V352 M400 336 V352"></path>
+          </svg>
+          <figcaption>Elevation, drawn to the lake.</figcaption>
+        </figure>
+
+        <figure class="finale-figure reveal">
+          <svg id="sitePlan" viewBox="0 0 520 360" fill="none" stroke="#33513a" stroke-width="2" stroke-linecap="round" aria-label="Site plan of the Ardmere plot">
+            <rect x="46" y="30" width="428" height="252" rx="6" stroke-dasharray="7 7"></rect>
+            <rect x="176" y="92" width="168" height="104"></rect>
+            <path d="M176 144 H344 M260 92 V196"></path>
+            <path d="M344 168 C396 168 410 196 428 236 L452 282"></path>
+            <circle cx="104" cy="96" r="17"></circle>
+            <circle cx="128" cy="128" r="12"></circle>
+            <circle cx="404" cy="88" r="14"></circle>
+            <circle cx="96" cy="216" r="13"></circle>
+            <path d="M20 322 C90 306 150 334 220 320 C290 306 350 334 420 320 C460 312 486 320 500 316" stroke="#5b7fa6"></path>
+            <text x="260" y="150" text-anchor="middle" class="plan-text">HOUSE</text>
+            <text x="104" y="66" text-anchor="middle" class="plan-text">GARDEN</text>
+            <text x="416" y="222" text-anchor="middle" class="plan-text">DRIVE</text>
+            <text x="260" y="348" text-anchor="middle" class="plan-text plan-lake">THE LAKE</text>
+          </svg>
+          <figcaption>Site plan, one plot, one shore.</figcaption>
+        </figure>
+      </div>
+
+      <div class="finale-blocks">
+        <article class="finale-block reveal">
+          <h3>Light first</h3>
+          <p>Every room is placed for the hour when the lake turns blue. Glass faces the water, and the warm rooms sit behind it.</p>
+        </article>
+        <article class="finale-block reveal">
+          <h3>Rooms that hold still</h3>
+          <p>The plan moves in a slow line: arrive, gather, retreat. Nothing crosses, nothing hurries, and each room keeps its own quiet.</p>
+        </article>
+        <article class="finale-block reveal">
+          <h3>Water as a wall</h3>
+          <p>The lake closes the site on the south side, so the garden stays open and the house stays private without a fence.</p>
+        </article>
+      </div>
+
+      <p class="finale-spec reveal">Orientation: south to the lake &nbsp;·&nbsp; Structure: timber and glass &nbsp;·&nbsp; Status: concept study</p>
+      <footer class="finale-foot">Ardmere, a lakeside residence concept.</footer>
+    </div>
+  </section>
+
+  <button class="back-btn" id="backBtn" type="button">Back to the lake</button>
+  <div class="progress" aria-hidden="true"><span id="progressFill"></span></div>
+</div>
+
+
+<!-- Room detail sheet -->
+<div class="sheet-scrim" id="sheetScrim" hidden></div>
+<section class="sheet" id="roomSheet" role="dialog" aria-modal="false" aria-labelledby="sheetTitle" aria-hidden="true" hidden>
+  <div class="sheet-handle" aria-hidden="true"></div>
+  <button class="sheet-close" id="sheetClose" type="button" aria-label="Close details">×</button>
+  <div class="sheet-scroll">
+    <div class="sheet-media"><img id="sheetImg" src="" alt=""></div>
+    <div class="sheet-body">
+      <p class="sheet-kicker" id="sheetKicker"></p>
+      <h2 id="sheetTitle"></h2>
+      <p class="sheet-code" id="sheetCode"></p>
+      <p class="sheet-line" id="sheetLine"></p>
+      <h3>What this room is</h3>
+      <p id="sheetWhat"></p>
+      <h3>Layout and features</h3>
+      <ul class="sheet-list" id="sheetFeatures"></ul>
+      <h3>Dimensions and data</h3>
+      <dl class="sheet-data" id="sheetData"></dl>
+      <h3>The design idea</h3>
+      <p id="sheetIdea"></p>
+    </div>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
